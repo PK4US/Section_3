@@ -4,29 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".BackActivity">
 
-    <EditText
-        android:id="@+id/number1"
+    <TextView
+        android:id="@+id/summa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp"
-        android:ems="10"
-        android:hint="@string/number_1"
-        android:inputType="number|numberSigned|numberDecimal" />
-
-    <EditText
-        android:id="@+id/number2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="190dp"
-        android:ems="10"
-        android:hint="@string/number_2"
-        android:inputType="number|numberSigned|numberDecimal" />
+        android:layout_marginTop="160dp"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/button"
@@ -34,9 +23,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="260dp"
-        android:text="@string/calc_summa"
-        android:textColor="@color/colorButton"
+        android:layout_marginTop="210dp"
+        android:text="@string/back"
         android:padding="20dp"
+        android:onClick="clickButton"
         android:textSize="@dimen/text_size" />
 </RelativeLayout>
